@@ -35,7 +35,9 @@ public class Logic {
                     }
                 }
                 rst = !findFigure;
-                this.figures[index] = this.figures[index].copy(dest);
+                if (rst) {
+                    this.figures[index] = this.figures[index].copy(dest);
+                }
             }
         }
         return rst;
